@@ -79,8 +79,7 @@ header{
     width: 160%;
 }
 
-
-/* RESPONSIVE */
+/* RESPONSIVE */ 
 
 @media screen and (max-width: 1080px){
     body{

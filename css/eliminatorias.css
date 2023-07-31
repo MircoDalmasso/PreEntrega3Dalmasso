@@ -7,7 +7,7 @@ nav a{
 }
 
 .container-elim{
-    background-color: #77b937;
+    
 }
 
 .container-elim__table{
@@ -15,26 +15,26 @@ nav a{
     grid-template-areas: 
     "table__first-column table__second-column table__third-column";
     grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 500px;
+    grid-template-rows: 550px;
     grid-column-gap: 250px;
     justify-content: center;
     align-items: center;
+    background-color: #77b937;
     border: 2px solid #ffffff;
 }
-
 
 .container-elim__table p{
     color: #ffffff; 
     text-transform: uppercase;
     font-size: 28px;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
-
 
 .container-elim__table input{
     background: none;
     border: #ffffff 2px solid;
-    color: #ffffff;
     font-size: 20px;
     text-align: center;
     margin: 10px;
@@ -47,8 +47,33 @@ nav a{
     margin: 0 0 40px;
 }
 
+.container-elim__text{
+    background-color: #77b937;
+    border: #ffffff 2px solid;
+    margin: 30px;
+}
 
+.container-elim__text h1{
+    margin: 10px 0 0 0;
+    color: #ffffff;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
 
+.container-elim__text p{
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 30px;
+}
 
+/*footer*/
+.container p{
+    color: #77b937;
+}
 
-
+.container small{
+    color: #77b937;
+}

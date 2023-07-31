@@ -1,13 +1,13 @@
+body{
+    max-height: 100vh;
+}
+
 header{
     margin-top: 20px;
 }
 
 nav a{
     margin: 20px 0 0 20px;
-}
-
-.container-elim{
-    
 }
 
 .container-elim__table{
@@ -21,6 +21,7 @@ nav a{
     align-items: center;
     background-color: #77b937;
     border: 2px solid #ffffff;
+    margin: 0 15px;
 }
 
 .container-elim__table p{
@@ -44,13 +45,13 @@ nav a{
 }
 
 .table__first-row{
-    margin: 0 0 40px;
+    margin: 0 0 40px 0;
 }
 
 .container-elim__text{
     background-color: #77b937;
     border: #ffffff 2px solid;
-    margin: 30px;
+    margin: 40px;
 }
 
 .container-elim__text h1{
@@ -76,4 +77,118 @@ nav a{
 
 .container small{
     color: #77b937;
+}
+
+
+
+
+/* responsive */
+
+@media screen and (max-width: 1200px){
+    .container-elim__table{
+        grid-template-columns: 150px 150px 150px;
+        grid-template-rows: 600px;
+        justify-content: left;
+        grid-column-gap: 250px;
+    }
+    
+    .container-elim__table input{
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .container-elim__table{
+        grid-column-gap: 200px;
+    }
+}
+
+@media screen and (max-width: 928px){
+    .container-elim__table{
+        grid-column-gap: 150px;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .container-elim__table{
+        grid-column-gap: 130px;
+    }
+}
+
+@media screen and (max-width: 890px){
+    .container-elim__table{
+        grid-column-gap: 150px;
+    }
+
+    .container-elim__table input{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .container-elim__table{
+        grid-column-gap: 100px;
+    }
+
+    .container-elim__table input{
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 690px){
+    .container-elim__table{
+        grid-column-gap: 40px;
+    }
+
+    .container-elim__table input{
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .container-elim__table{
+        grid-column-gap: 20px;
+    }
+
+    .container-elim__table input{
+        width: 140px;
+    }
+
+    .container-elim__table p{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 490px){
+    .container-elim__table{
+        grid-column-gap: 10px;
+    }
+
+    .container-elim__table input{
+        width: 100px;
+        height: 30px;
+    }
+
+    .container-elim__table p{
+        font-size: 15px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .container-elim__table{
+        grid-column-gap: 5px;
+        grid-template-columns: 90px;
+        grid-template-rows: 490px;
+    }
+
+    .container-elim__table input{
+        width: 80px;
+        height: 25px;
+    }
+
+    .container-elim__table p{
+        font-size: 15px;
+    }
 }

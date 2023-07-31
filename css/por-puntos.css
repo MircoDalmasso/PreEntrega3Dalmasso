@@ -27,7 +27,7 @@ table{
     
 }
 
-.container-pp-table{
+.container-pp__table{
     margin: 30px;
 }
 
@@ -78,7 +78,7 @@ input{
         font-size: 20px;
     }
 
-    .container-pp-text{
+    .container-pp__text{
         margin: 0 30px;
         color: #ffffff;
         font-size: 23px;

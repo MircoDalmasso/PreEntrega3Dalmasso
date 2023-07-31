@@ -64,7 +64,7 @@ header{
 }
 
 .container-home__button:hover {
-    color: white;
+    color: #ffffff;
     background-color: #77b937;
 }
 
@@ -129,7 +129,7 @@ header{
     }
 }
 
-@media screen and (max-width: 290px){
+@media screen and (max-width: 320px){
     .container-home__ilust img{
         height: 230px;    
     }

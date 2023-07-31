@@ -1,0 +1,41 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-image: url(../img/fndo.png);
+    position: relative;
+    padding-bottom: 200px;
+    min-height: 100vh;
+}
+
+.hdr{
+display: flex;
+}
+
+ul{
+    list-style: none;
+}
+
+header nav a{
+    font-size: 50px;
+    color: white;
+}
+
+nav a:hover{
+    color: #77b937;
+}
+
+
+
+
+
+
+
+
+
+

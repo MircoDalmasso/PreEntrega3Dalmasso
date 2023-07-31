@@ -1,0 +1,56 @@
+body{
+max-height: 100vh;
+}
+
+header{
+    margin: 20px 0 0 0;
+}
+
+.container-help{
+    display: grid;
+    place-items: center;
+}
+
+.accordion{
+    width: 1200px;
+}
+
+.accordion-button{
+    background-color: #77b937;
+    color: #ffffff;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed){
+    color: #ffffff;
+    background-color: #448900;
+    box-shadow: none;
+}
+
+.container p{
+    color: #77b937;
+}
+
+.container small{
+    color: #77b937;
+}
+
+.container-form{
+    width: 600px;
+    margin: 0 20px;
+}
+form{
+    height:200px ;
+    width:640px ;
+    background-color: #77b937;
+}
+
+.form-group label{
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+

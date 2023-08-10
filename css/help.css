@@ -1,54 +1,49 @@
-body{
-max-height: 100vh;
+body {
+  max-height: 100vh;
+}
+body header {
+  margin: 20px 0 0 0;
 }
 
-header{
-    margin: 20px 0 0 0;
+.container-help {
+  display: grid;
+  place-items: center;
+}
+.container-help .accordion {
+  width: 1200px;
+}
+.container-help .accordion-button {
+  background-color: #77b937;
+  color: #ffffff;
+}
+.container-help .accordion .accordion-button:focus {
+  box-shadow: none;
+}
+.container-help .accordion .accordion-button:not(.collapsed) {
+  color: #ffffff;
+  background-color: #448900;
+  box-shadow: none;
 }
 
-.container-help{
-    display: grid;
-    place-items: center;
+.container p {
+  color: #77b937;
+}
+.container small {
+  color: #77b937;
+}
+.container-form {
+  width: 600px;
+  margin: 0 20px;
 }
 
-.accordion{
-    width: 1200px;
+form {
+  height: 200px;
+  width: 640px;
+  background-color: #77b937;
+}
+form .form-group label {
+  color: #ffffff;
+  margin-top: 10px;
 }
 
-.accordion-button{
-    background-color: #77b937;
-    color: #ffffff;
-}
-
-.accordion-button:focus{
-    box-shadow: none;
-}
-
-.accordion-button:not(.collapsed){
-    color: #ffffff;
-    background-color: #448900;
-    box-shadow: none;
-}
-
-.container p{
-    color: #77b937;
-}
-
-.container small{
-    color: #77b937;
-}
-
-.container-form{
-    width: 600px;
-    margin: 0 20px;
-}
-form{
-    height:200px ;
-    width:640px ;
-    background-color: #77b937;
-}
-
-.form-group label{
-    color: #ffffff;
-    margin-top: 10px;
-}
+/*# sourceMappingURL=help.css.map */

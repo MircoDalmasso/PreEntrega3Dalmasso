@@ -1,0 +1,110 @@
+/* Variables */
+$primary-color:#77b937;
+$secondary-color:#ffffff;
+
+
+
+body{
+    max-height: 100px;
+
+    header{
+        margin-top: 20px;
+
+        nav a{
+            margin: 20px 0 0 20px;
+        }
+    }
+}
+
+
+.container-pp{
+    display: flex;
+    flex-direction:row-reverse;
+
+
+    .container-pp__text{
+        margin: 0 30px;
+        color: $secondary-color;
+        font-size: 23px;
+        text-align: center;
+        padding: 0px 5px;
+        white-space: pre-line;
+        background-color: $primary-color;
+
+        h1{
+        color: $secondary-color;
+        text-decoration: underline;
+        }
+    }
+}
+
+.container-pp__table{
+    margin: 30px;   
+
+
+    table{
+        width:600 ;
+        height:1000 ;
+        color: $primary-color;
+        table-layout: fixed;
+        border-collapse: collapse;
+        border: solid 2px $secondary-color;
+        background-color: $primary-color;
+
+        thead{
+            background-color: $secondary-color;
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+
+        th{
+            padding: 20px;
+            border-right: solid 2px $secondary-color;
+            text-align: center;
+            font-size: 20px;
+            }
+
+        #num{
+            color: $secondary-color;
+            align-items: center;
+            }
+
+        tbody{
+                td{
+                padding:20px;
+                border-bottom: solid 2px $secondary-color;
+                }
+                tr:hover{
+                background: hsla(0, 0%, 100%, 0.503);
+                }
+
+                input{
+                width: 100px;
+                height: 50px;
+                font-size: 50px;
+                color: $secondary-color ;
+                text-align: center;
+                background: none;
+                border: none;
+                }   
+
+                #text-apod{
+                width: 170px;
+                height: 40px;
+                font-size: 20px;
+                }
+            }
+    }
+}
+
+
+/*footer*/
+.container{
+    p{
+        color: $primary-color;
+    }
+
+    small{
+        color: $primary-color   ;
+    }
+}

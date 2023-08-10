@@ -1,103 +1,87 @@
-body{
-    max-height: 100px;
+/* Variables */
+body {
+  max-height: 100px;
+}
+body header {
+  margin-top: 20px;
+}
+body header nav a {
+  margin: 20px 0 0 20px;
 }
 
-header{
-    margin-top: 20px;
+.container-pp {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.container-pp .container-pp__text {
+  margin: 0 30px;
+  color: #ffffff;
+  font-size: 23px;
+  text-align: center;
+  padding: 0px 5px;
+  white-space: pre-line;
+  background-color: #77b937;
+}
+.container-pp .container-pp__text h1 {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
-nav a{
-    margin: 20px 0 0 20px;
+.container-pp__table {
+  margin: 30px;
 }
-
-.container-pp{
-    display: flex;
-    flex-direction:row-reverse;
-
+.container-pp__table table {
+  width: 600;
+  height: 1000;
+  color: #77b937;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: solid 2px #ffffff;
+  background-color: #77b937;
 }
-
-table{
-    width:600 ;
-    height:1000 ;
-    color: #77b937;
-    table-layout: fixed;
-    border-collapse: collapse;
-    border: solid 2px #ffffff;
-    background-color: #77b937;
-    
+.container-pp__table table thead {
+  background-color: #ffffff;
+  text-transform: uppercase;
+  font-size: 30px;
 }
-
-.container-pp__table{
-    margin: 30px;
+.container-pp__table table th {
+  padding: 20px;
+  border-right: solid 2px #ffffff;
+  text-align: center;
+  font-size: 20px;
 }
-
-
-thead{
-    background-color: #ffffff;
-    text-transform: uppercase;
-    font-size: 30px;
+.container-pp__table table #num {
+  color: #ffffff;
+  align-items: center;
 }
-
-
-th{
-    padding: 20px;
-    border-right: solid 2px #ffffff;
-    text-align: center;
-    font-size: 20px;
-    }
-
-#num{
-    color: #ffffff;
-    align-items: center;
-    }
-
-
-tbody td{
-    padding:20px;
-    border-bottom: solid 2px #ffffff;
+.container-pp__table table tbody td {
+  padding: 20px;
+  border-bottom: solid 2px #ffffff;
 }
-
-tbody tr:hover {
-    background: hsla(0, 0%, 100%, 0.503);
+.container-pp__table table tbody tr:hover {
+  background: hsla(0, 0%, 100%, 0.503);
 }
-
-input{
-    width: 100px;
-    height: 50px;
-    font-size: 50px;
-    color: #ffffff;
-    text-align: center;
-    background: none;
-    border: none;
+.container-pp__table table tbody input {
+  width: 100px;
+  height: 50px;
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  background: none;
+  border: none;
 }
-
-
-    #text-apod{
-        width: 170px;
-        height: 40px;
-        font-size: 20px;
-    }
-
-    .container-pp__text{
-        margin: 0 30px;
-        color: #ffffff;
-        font-size: 23px;
-        text-align: center;
-        padding: 0px 5px;
-        white-space: pre-line;
-        background-color: #77b937;
-    }
-
-    .container-pp-text h1{
-        color: #ffffff;
-        text-decoration: underline;
-    }
+.container-pp__table table tbody #text-apod {
+  width: 170px;
+  height: 40px;
+  font-size: 20px;
+}
 
 /*footer*/
-.container p{
-    color: #77b937;
+.container p {
+  color: #77b937;
+}
+.container small {
+  color: #77b937;
 }
 
-.container small{
-    color: #77b937;
-}
+/*# sourceMappingURL=por-puntos.css.map */

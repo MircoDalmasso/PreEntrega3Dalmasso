@@ -2,6 +2,8 @@
 $primary-color:#77b937;
 $secondary-color:#ffffff;
 
+@use './layout/footer';
+
 
 
 body{
@@ -97,14 +99,3 @@ body{
     }
 }
 
-
-/*footer*/
-.container{
-    p{
-        color: $primary-color;
-    }
-
-    small{
-        color: $primary-color   ;
-    }
-}

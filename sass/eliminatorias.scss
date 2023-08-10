@@ -1,0 +1,194 @@
+@use './layout/footer';
+
+/* Variables */
+$primary-color:#77b937;
+$secondary-color:#ffffff;
+
+body{
+    max-height: 100vh;
+
+    header{
+        margin-top: 20px;
+    
+        nav a{
+            margin: 20px 0 0 20px;
+        }
+    }
+}
+
+
+.container-elim__table{
+    display: grid;
+    grid-template-areas: 
+    "table__first-column table__second-column table__third-column";
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 550px;
+    grid-column-gap: 250px;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    border: 2px solid $secondary-color;
+    margin: 0 15px;
+
+    p{
+        color: $secondary-color; 
+        text-transform: uppercase;
+        font-size: 28px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    input{
+        background: none;
+        border: $secondary-color 2px solid;
+        font-size: 20px;
+        text-align: center;
+        margin: 10px;
+        color: $secondary-color;
+    }
+
+    input:hover{
+        background: hsla(0, 0%, 100%, 0.503);
+    }
+
+    .table__first-row{
+        margin: 0 0 40px 0;
+    }
+}
+
+
+.container-elim__text{
+    background-color: $primary-color;
+    border: $secondary-color 2px solid;
+    margin: 40px;
+
+    h1{
+        margin: 10px 0 0 0;
+        color: $secondary-color;
+        text-align: center;
+        font-size: 35px;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+
+    p{
+        color: $secondary-color;
+        font-size: 25px;
+        text-align: center;
+        margin: 20px 30px;
+    }
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 1200px){
+    .container-elim__table{
+        grid-template-columns: 150px 150px 150px;
+        grid-template-rows: 600px;
+        justify-content: left;
+        grid-column-gap: 250px;
+    }
+    
+    .container-elim__table input{
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .container-elim__table{
+        grid-column-gap: 200px;
+    }
+}
+
+@media screen and (max-width: 928px){
+    .container-elim__table{
+        grid-column-gap: 150px;
+    }
+}
+
+@media screen and (max-width: 860px){
+    .container-elim__table{
+        grid-column-gap: 130px;
+    }
+}
+
+@media screen and (max-width: 890px){
+    .container-elim__table{
+        grid-column-gap: 150px;
+    }
+
+    .container-elim__table input{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .container-elim__table{
+        grid-column-gap: 100px;
+    }
+
+    .container-elim__table input{
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 690px){
+    .container-elim__table{
+        grid-column-gap: 40px;
+    }
+
+    .container-elim__table input{
+        width: 140px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .container-elim__table{
+        grid-column-gap: 20px;
+    }
+
+    .container-elim__table input{
+        width: 140px;
+    }
+
+    .container-elim__table p{
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 490px){
+    .container-elim__table{
+        grid-column-gap: 10px;
+    }
+
+    .container-elim__table input{
+        width: 100px;
+        height: 30px;
+    }
+
+    .container-elim__table p{
+        font-size: 15px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .container-elim__table{
+        grid-column-gap: 5px;
+        grid-template-columns: 90px;
+        grid-template-rows: 490px;
+    }
+
+    .container-elim__table input{
+        width: 80px;
+        height: 25px;
+    }
+
+    .container-elim__table p{
+        font-size: 15px;
+    }
+}

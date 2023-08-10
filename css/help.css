@@ -1,3 +1,11 @@
+/*footer*/
+.container p {
+  color: #77b937;
+}
+.container small {
+  color: #77b937;
+}
+
 body {
   max-height: 100vh;
 }
@@ -25,12 +33,6 @@ body header {
   box-shadow: none;
 }
 
-.container p {
-  color: #77b937;
-}
-.container small {
-  color: #77b937;
-}
 .container-form {
   width: 600px;
   margin: 0 20px;

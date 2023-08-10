@@ -1,4 +1,12 @@
 /* Variables */
+/*footer*/
+.container p {
+  color: #77b937;
+}
+.container small {
+  color: #77b937;
+}
+
 body {
   max-height: 100px;
 }
@@ -74,14 +82,6 @@ body header nav a {
   width: 170px;
   height: 40px;
   font-size: 20px;
-}
-
-/*footer*/
-.container p {
-  color: #77b937;
-}
-.container small {
-  color: #77b937;
 }
 
 /*# sourceMappingURL=por-puntos.css.map */

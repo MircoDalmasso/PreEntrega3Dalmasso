@@ -1,4 +1,6 @@
-@use './layout/footer';
+@use '../layout/footer';
+@use '../layout/header';
+
 
 
 body{
@@ -8,7 +10,6 @@ body{
         margin: 20px 0 0 0;
     }
 }
-
 
     .container-help{
         display: grid;
@@ -47,5 +48,15 @@ body{
         .form-group label{
             color: #ffffff;
             margin-top: 10px;
+        }
+
+
+
+        .form-control{
+            @if length("") == 0 {
+                background-color: red; // Aplicar rojo cuando el valor está vacío
+            } @else {
+                background-color: greenyellow; // Aplicar verde cuando hay texto en el valor
+            }
         }
     }

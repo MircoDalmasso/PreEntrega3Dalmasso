@@ -1,12 +1,13 @@
-@use './layout/footer';
-
 /* Variables */
 $primary-color:#77b937;
 $secondary-color:#ffffff;
 
+@use '../layout/footer';
+@use '../layout/header';
+
 body{
     max-height: 100vh;
-
+    overflow: scroll;
     header{
         margin-top: 20px;
     

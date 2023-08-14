@@ -1,10 +1,13 @@
-/*footer*/
+/* Variables */
+$primary-color:#77b937;
+$secondary-color:#ffffff;
+
 .container{
     p{
-        color: #77b937;
+        color: $primary-color;
     }
 
     small{
-        color: #77b937;
+        color: $primary-color;
     }
 }

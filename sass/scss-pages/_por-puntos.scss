@@ -2,7 +2,9 @@
 $primary-color:#77b937;
 $secondary-color:#ffffff;
 
-@use './layout/footer';
+@use '../layout/footer';
+@use '../layout/header';
+
 
 
 
@@ -14,6 +16,16 @@ body{
 
         nav a{
             margin: 20px 0 0 20px;
+
+            img{
+                height: 60px;
+            }
+        }
+
+        nav a:hover{
+            margin: 20px 0 0 20px;
+
+            
         }
     }
 }

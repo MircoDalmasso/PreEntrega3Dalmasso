@@ -1,41 +1,324 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Roboto', sans-serif;
+/* Variables */
+/* Variables */
+/* Variables */
+.container p {
+  color: #77b937;
+}
+.container small {
+  color: #77b937;
 }
 
-body{
-    background-image: url(../img/fndo.png);
-    position: relative;
-    padding-bottom: 200px;
-    min-height: 100vh;
+/* Variables */
+.hdr {
+  display: flex;
+}
+.hdr ul {
+  list-style: none;
+}
+.hdr a {
+  font-size: 50px;
+  color: #ffffff;
+}
+.hdr a:hover {
+  color: #77b937;
 }
 
-.hdr{
-display: flex;
+body {
+  max-height: 100px;
+}
+body header {
+  margin-top: 20px;
+}
+body header nav a {
+  margin: 20px 0 0 20px;
+}
+body header nav a img {
+  height: 60px;
+}
+body header nav a:hover {
+  margin: 20px 0 0 20px;
 }
 
-ul{
-    list-style: none;
+.container-pp {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.container-pp .container-pp__text {
+  margin: 0 30px;
+  color: #ffffff;
+  font-size: 23px;
+  text-align: center;
+  padding: 0px 5px;
+  white-space: pre-line;
+  background-color: #77b937;
+}
+.container-pp .container-pp__text h1 {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
-header nav a{
-    font-size: 50px;
-    color: white;
+.container-pp__table {
+  margin: 30px;
+}
+.container-pp__table table {
+  width: 600;
+  height: 1000;
+  color: #77b937;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: solid 2px #ffffff;
+  background-color: #77b937;
+}
+.container-pp__table table thead {
+  background-color: #ffffff;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.container-pp__table table th {
+  padding: 20px;
+  border-right: solid 2px #ffffff;
+  text-align: center;
+  font-size: 20px;
+}
+.container-pp__table table #num {
+  color: #ffffff;
+  align-items: center;
+}
+.container-pp__table table tbody td {
+  padding: 20px;
+  border-bottom: solid 2px #ffffff;
+}
+.container-pp__table table tbody tr:hover {
+  background: hsla(0, 0%, 100%, 0.503);
+}
+.container-pp__table table tbody input {
+  width: 100px;
+  height: 50px;
+  font-size: 50px;
+  color: #ffffff;
+  text-align: center;
+  background: none;
+  border: none;
+}
+.container-pp__table table tbody #text-apod {
+  width: 170px;
+  height: 40px;
+  font-size: 20px;
 }
 
-nav a:hover{
-    color: #77b937;
+/* Variables */
+body {
+  max-height: 100vh;
+  overflow: scroll;
+}
+body header {
+  margin-top: 20px;
+}
+body header nav a {
+  margin: 20px 0 0 20px;
 }
 
+.container-elim__table {
+  display: grid;
+  grid-template-areas: "table__first-column table__second-column table__third-column";
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 550px;
+  grid-column-gap: 250px;
+  justify-content: center;
+  align-items: center;
+  background-color: #77b937;
+  border: 2px solid #ffffff;
+  margin: 0 15px;
+}
+.container-elim__table p {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 28px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.container-elim__table input {
+  background: none;
+  border: #ffffff 2px solid;
+  font-size: 20px;
+  text-align: center;
+  margin: 10px;
+  color: #ffffff;
+}
+.container-elim__table input:hover {
+  background: hsla(0, 0%, 100%, 0.503);
+}
+.container-elim__table .table__first-row {
+  margin: 0 0 40px 0;
+}
 
+.container-elim__text {
+  background-color: #77b937;
+  border: #ffffff 2px solid;
+  margin: 40px;
+}
+.container-elim__text h1 {
+  margin: 10px 0 0 0;
+  color: #ffffff;
+  text-align: center;
+  font-size: 35px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+.container-elim__text p {
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+  margin: 20px 30px;
+}
 
+/* responsive */
+@media screen and (max-width: 1200px) {
+  .container-elim__table {
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 600px;
+    justify-content: left;
+    grid-column-gap: 250px;
+  }
+  .container-elim__table input {
+    width: 180px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .container-elim__table {
+    grid-column-gap: 200px;
+  }
+}
+@media screen and (max-width: 928px) {
+  .container-elim__table {
+    grid-column-gap: 150px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .container-elim__table {
+    grid-column-gap: 130px;
+  }
+}
+@media screen and (max-width: 890px) {
+  .container-elim__table {
+    grid-column-gap: 150px;
+  }
+  .container-elim__table input {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .container-elim__table {
+    grid-column-gap: 100px;
+  }
+  .container-elim__table input {
+    width: 130px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .container-elim__table {
+    grid-column-gap: 40px;
+  }
+  .container-elim__table input {
+    width: 140px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .container-elim__table {
+    grid-column-gap: 20px;
+  }
+  .container-elim__table input {
+    width: 140px;
+  }
+  .container-elim__table p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .container-elim__table {
+    grid-column-gap: 10px;
+  }
+  .container-elim__table input {
+    width: 100px;
+    height: 30px;
+  }
+  .container-elim__table p {
+    font-size: 15px;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 440px) {
+  .container-elim__table {
+    grid-column-gap: 5px;
+    grid-template-columns: 90px;
+    grid-template-rows: 490px;
+  }
+  .container-elim__table input {
+    width: 80px;
+    height: 25px;
+  }
+  .container-elim__table p {
+    font-size: 15px;
+  }
+}
+body {
+  max-height: 100vh;
+}
+body header {
+  margin: 20px 0 0 0;
+}
 
+.container-help {
+  display: grid;
+  place-items: center;
+}
+.container-help .accordion {
+  width: 1200px;
+}
+.container-help .accordion-button {
+  background-color: #77b937;
+  color: #ffffff;
+}
+.container-help .accordion .accordion-button:focus {
+  box-shadow: none;
+}
+.container-help .accordion .accordion-button:not(.collapsed) {
+  color: #ffffff;
+  background-color: #448900;
+  box-shadow: none;
+}
 
+.container-form {
+  width: 600px;
+  margin: 0 20px;
+}
 
+form {
+  height: 200px;
+  width: 640px;
+  background-color: #77b937;
+}
+form .form-group label {
+  color: #ffffff;
+  margin-top: 10px;
+}
+form .form-control {
+  background-color: greenyellow;
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
 
+body {
+  background-image: url(../img/fndo.png);
+  position: relative;
+  padding-bottom: 200px;
+  min-height: 100vh;
+}
 
-
+/*# sourceMappingURL=style.css.map */

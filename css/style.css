@@ -309,6 +309,88 @@ form .form-control {
 }
 
 /*RESPONSIVE*/
+@media screen and (max-width: 1200px) {
+  .container-help .accordion {
+    width: 1000px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container-help .accordion {
+    width: 900px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .container-help .accordion {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .container-help .accordion {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .container-help .accordion {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .container-help .accordion {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container-help .accordion {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .container-help .accordion {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  form {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 550px) {
+  form {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 450px) {
+  form {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 350px) {
+  form {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 650px) {
+  form .form-control {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 550px) {
+  form .form-control {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 450px) {
+  form .form-control {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 350px) {
+  form .form-control {
+    width: 200px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

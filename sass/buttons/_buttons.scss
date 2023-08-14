@@ -7,7 +7,7 @@ $secondary-color:#ffffff;
     padding: 17px 40px;
     border-radius: 50px;
     border: 0;
-    background-color: transparent;
+    background-color: rgba($secondary-color, 0.2); 
     box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -15,6 +15,7 @@ $secondary-color:#ffffff;
     transition: all .5s ease;
     color: $primary-color;
     text-decoration: none;
+    margin: 0 0 10px;
 }
 
     .container-home__button:hover {

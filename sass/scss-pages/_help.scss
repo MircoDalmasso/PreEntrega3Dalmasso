@@ -67,7 +67,38 @@ body{
 
 
 
+    //mixins
+    @mixin md($medida : 480px){
+        @media screen and (max-width: $medida){
+            @content;
+        }
+    }
+    
     /*RESPONSIVE*/
 
-    //mixins
-   
+
+    .container-help{
+        .accordion{
+            @include md(1200px){ width: 1000px;}
+            @include md(1000px){ width: 900px;}
+            @include md(850px){ width:800px;}
+            @include md(750px){ width:700px;}
+            @include md(650px){ width:600px;}
+            @include md(550px){ width:500px;}
+            @include md(450px){ width:400px;}
+            @include md(350px){ width:300px;}
+        }
+    }
+
+    form{
+        @include md(650px){ width:550px;}
+        @include md(550px){ width:450px;}
+        @include md(450px){ width:350px;}
+        @include md(350px){ width:250px;}
+        .form-control{
+            @include md(650px){ width:500px;}
+            @include md(550px){ width:400px;}
+            @include md(450px){ width:300px;}
+            @include md(350px){ width:200px;}
+        }
+    }

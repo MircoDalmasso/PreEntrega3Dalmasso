@@ -1,6 +1,10 @@
 @use '../layout/footer';
 @use '../layout/header';
 
+/* Variables */
+$primary-color:#77b937;
+$secondary-color:#ffffff;
+$form: true;
 
 
 body{
@@ -13,21 +17,21 @@ body{
 
     .container-help{
         display: grid;
-        place-items: center;
+        justify-content: center;
 
         .accordion{
         width: 1200px;
 
         &-button{
-            background-color: #77b937;
-            color: #ffffff;
+            background-color: $primary-color;
+            color: $secondary-color;
             }
         .accordion-button:focus{
             box-shadow: none;
         }
         .accordion-button:not(.collapsed){
-            color: #ffffff;
-            background-color: #448900;
+            color: $secondary-color;
+            background-color: $primary-color;
             box-shadow: none;
         }
         }
@@ -43,20 +47,27 @@ body{
     form{
         height:200px ;
         width:640px ;
-        background-color: #77b937;
+        background-color: $primary-color;
 
         .form-group label{
-            color: #ffffff;
+            color: $secondary-color;
             margin-top: 10px;
         }
 
 
 
         .form-control{
-            @if length("") == 0 {
-                background-color: red; // Aplicar rojo cuando el valor está vacío
+            @if $form == true {
+                background-color: $secondary-color; // Aplicar blanco si es verdadero
             } @else {
-                background-color: greenyellow; // Aplicar verde cuando hay texto en el valor
+                background-color: red; // Aplicar rojo si es falso
             }
         }
     }
+
+
+
+    /*RESPONSIVE*/
+
+    //mixins
+   

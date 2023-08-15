@@ -5,9 +5,12 @@ $secondary-color:#ffffff;
 .container{
     p{
         color: $primary-color;
+        font-size: 20px;
     }
 
     small{
         color: $primary-color;
     }
+
+    height: 50px;
 }

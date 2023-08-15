@@ -1,8 +1,12 @@
 /* Variables */
 /* Variables */
 /* Variables */
+.container {
+  height: 50px;
+}
 .container p {
   color: #77b937;
+  font-size: 20px;
 }
 .container small {
   color: #77b937;
@@ -389,6 +393,33 @@ form .form-control {
   form .form-control {
     width: 200px;
   }
+}
+
+/* Variables */
+.container-comojugar__title h1 {
+  text-align: center;
+  color: #ffffff;
+  margin: 0 0 50px 0;
+  font-size: 30px;
+}
+
+.container-comojugar__body {
+  width: 70%;
+  justify-content: center;
+}
+.container-comojugar__body img {
+  width: auto;
+}
+
+/* Variables */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #77b937;
+  border-radius: 5px;
+  height: 80px;
 }
 
 * {

@@ -2,9 +2,14 @@
 $primary-color:#77b937;
 $secondary-color:#ffffff;
 
+//Pages
 @use './scss-pages/por-puntos';
 @use './scss-pages/eliminatorias';
 @use './scss-pages/help';
+@use './scss-pages/comojugar';
+
+//Scrollbar
+@use './layout/scrollbar';
 
 
 *{

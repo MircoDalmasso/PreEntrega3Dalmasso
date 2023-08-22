@@ -6,7 +6,7 @@ $secondary-color:#ffffff;
 @use './scss-pages/por-puntos';
 @use './scss-pages/eliminatorias';
 @use './scss-pages/help';
-@use './scss-pages/comojugar';
+@use './scss-pages/partidas-arch';
 
 //Scrollbar
 @use './layout/scrollbar';
@@ -24,6 +24,7 @@ body{
     position: relative;
     padding-bottom: 200px;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 

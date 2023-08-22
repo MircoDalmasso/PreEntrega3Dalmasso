@@ -396,30 +396,83 @@ form .form-control {
 }
 
 /* Variables */
-.container-comojugar__title h1 {
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.container-partidas-arch__title h1 {
   text-align: center;
   color: #ffffff;
   margin: 0 0 50px 0;
   font-size: 30px;
 }
 
-.container-comojugar__body {
-  width: 70%;
+.container-partidas-arch__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-partidas-arch__body .table-partidas-arch {
+  width: 90%;
+  border-radius: 10px;
+}
+.container-partidas-arch__body .table-partidas-arch .table-thead {
+  background-color: #ffffff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.container-partidas-arch__body .table-partidas-arch .table-thead p {
+  text-align: left;
+  font-weight: 700;
+  padding: 5px;
+}
+.container-partidas-arch__body .table-partidas-arch .table-tbody {
+  background-color: #77b937;
+  height: 500px;
+}
+.container-partidas-arch__body .table-partidas-arch .table-tbody .table-tbody__local {
+  display: flex;
   justify-content: center;
 }
-.container-comojugar__body img {
-  width: auto;
+.container-partidas-arch__body .table-partidas-arch .table-tbody .table-tbody__local p {
+  background-color: #3C6810;
+  color: #ffffff;
+  border: #000000 2px solid;
+  text-align: center;
+  font-size: 30px;
+  width: 95%;
+  padding: 5px 0;
+  margin: 10px 0;
+}
+.container-partidas-arch__body .table-partidas-arch .table-tbody .table-tbody__part p {
+  color: #ffffff;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.container-partidas-arch__body .table-partidas-arch .table-tbody .table-tbody__part .part__box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3C6810;
+  width: 95%;
+}
+.container-partidas-arch__body .table-partidas-arch .table-tbody .table-tbody__part img {
+  height: 40px;
 }
 
 /* Variables */
 body::-webkit-scrollbar {
-  width: 10px;
+  width: 3px;
+  background-color: black;
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: #77b937;
   border-radius: 5px;
-  height: 80px;
+  height: 5px;
 }
 
 * {
@@ -434,6 +487,7 @@ body {
   position: relative;
   padding-bottom: 200px;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

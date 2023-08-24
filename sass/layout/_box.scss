@@ -1,0 +1,59 @@
+/* Variables */
+$primary-color:#77b937;
+$secondary-color:#ffffff;
+
+
+.part__boxs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+    background-color: #3C6810;
+    width: 95%;
+    margin: 0 30px 10px 30px;
+    border-radius: 5px;
+
+    option{
+        background-color: #3C6810;
+    }
+    #box__fecha{
+        width: 110px;
+        background-color: transparent;
+        border-color: transparent;
+        color: $secondary-color;
+        font-size: 18px;
+        align-content: center;
+    }
+
+    #box__fecha::placeholder{
+        color: $secondary-color;
+    }
+
+    select{
+        background-color: transparent;
+        color: $secondary-color;
+        width: 200px;
+        height: 35px;
+    }
+
+    select :focus {
+        border-color: transparent;
+    }
+}
+
+.box__selects{
+    display: flex;
+    margin-right: 20px;
+
+    select{
+        margin-right: 10px;
+    }
+
+    .btn-outline-danger{
+        margin-left: 10px;
+    }
+}
+
+img{
+    height: 40px;
+}

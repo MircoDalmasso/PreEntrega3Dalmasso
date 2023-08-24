@@ -396,6 +396,56 @@ form .form-control {
 }
 
 /* Variables */
+/* Variables */
+.part__boxs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0px;
+  background-color: #3C6810;
+  width: 95%;
+  margin: 0 30px 10px 30px;
+  border-radius: 5px;
+}
+.part__boxs option {
+  background-color: #3C6810;
+}
+.part__boxs #box__fecha {
+  width: 110px;
+  background-color: transparent;
+  border-color: transparent;
+  color: #ffffff;
+  font-size: 18px;
+  align-content: center;
+}
+.part__boxs #box__fecha::placeholder {
+  color: #ffffff;
+}
+.part__boxs select {
+  background-color: transparent;
+  color: #ffffff;
+  width: 200px;
+  height: 35px;
+}
+.part__boxs select :focus {
+  border-color: transparent;
+}
+
+.box__selects {
+  display: flex;
+  margin-right: 20px;
+}
+.box__selects select {
+  margin-right: 10px;
+}
+.box__selects .btn-outline-danger {
+  margin-left: 10px;
+}
+
+img {
+  height: 40px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -451,16 +501,6 @@ body {
   color: #ffffff;
   font-weight: 700;
   margin-left: 10px;
-}
-.container-partidas-arch__body .table-partidas-arch .table-tbody .table-tbody__part .part__box-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #3C6810;
-  width: 95%;
-}
-.container-partidas-arch__body .table-partidas-arch .table-tbody .table-tbody__part img {
-  height: 40px;
 }
 
 /* Variables */

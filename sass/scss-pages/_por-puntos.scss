@@ -44,6 +44,7 @@ body{
         padding: 0px 5px;
         white-space: pre-line;
         background-color: $primary-color;
+        box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
 
         h1{
         color: $secondary-color;
@@ -110,4 +111,40 @@ body{
             }
     }
 }
+
+//mixins
+@mixin md($medida : 480px){
+    @media screen and (max-width: $medida){
+        @content;
+    }
+}
+
+//responsive
+
+@media screen and (max-width: 1080px){
+    .container-pp{
+        display: block;
+    }
+}
+
+.container-pp__text{
+    @include md(600px){ width: 590px;}
+    @include md(500px){ width: 490px;}
+    @include md(400px){ width: 390px;}
+    @include md(300px){ width: 290px;}
+}
+
+table{
+    @include md(770px){ width: 600px;}
+    @include md(640px){ width: 550px;}
+    @include md(500px){ width: 400px;}
+    @include md(400px){ width: 300px;}
+    @include md(300px){ width: 200px;}
+
+
+    #num{
+    @include md(640px){ padding: 10px;}
+    }
+}
+
 

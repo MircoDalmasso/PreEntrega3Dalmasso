@@ -55,6 +55,7 @@ body header nav a:hover {
   padding: 0px 5px;
   white-space: pre-line;
   background-color: #77b937;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
 }
 .container-pp .container-pp__text h1 {
   color: #ffffff;
@@ -108,6 +109,63 @@ body header nav a:hover {
   width: 170px;
   height: 40px;
   font-size: 20px;
+}
+
+@media screen and (max-width: 1080px) {
+  .container-pp {
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container-pp__text {
+    width: 590px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .container-pp__text {
+    width: 490px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container-pp__text {
+    width: 390px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .container-pp__text {
+    width: 290px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  table {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 640px) {
+  table {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 500px) {
+  table {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 400px) {
+  table {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 300px) {
+  table {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 640px) {
+  table #num {
+    padding: 10px;
+  }
 }
 
 /* Variables */
@@ -481,6 +539,7 @@ body {
   text-align: left;
   font-weight: 700;
   padding: 5px;
+  margin: 0;
 }
 .container-partidas-arch__body .table-partidas-arch .table-tbody {
   background-color: #77b937;
@@ -495,9 +554,12 @@ body {
 .container-partidas-arch__body .table-partidas-arch .table-tbody .table-tbody__local p {
   background-color: #3C6810;
   color: #ffffff;
-  border: #000000 2px solid;
+  border: #ffffff 1px solid;
+  box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
   text-align: center;
   font-size: 30px;
+  font-weight: lighter;
   width: 95%;
   padding: 5px 0;
   margin: 10px 0;
@@ -520,6 +582,68 @@ body {
   border-radius: 5px;
   text-align: center;
   color: rgba(255, 255, 255, 0.726);
+}
+
+@media screen and (max-width: 890px) {
+  .table-tbody {
+    height: 1500px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .part__boxs {
+    height: 90px;
+  }
+}
+@media screen and (max-width: 910px) {
+  .part__boxs select {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .part__boxs select {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 730px) {
+  .part__boxs select {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .part__boxs select {
+    width: 70px;
+  }
+}
+@media screen and (max-width: 910px) {
+  .part__boxs .num {
+    width: 90px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .part__boxs .num {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .part__boxs .num {
+    width: 50px;
+  }
+}
+@media screen and (max-width: 710px) {
+  .part__boxs #box__fecha {
+    width: 73px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .part__boxs .btn-check {
+    width: 20px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .part__boxs img {
+    height: 25px;
+  }
 }
 
 /* Variables */

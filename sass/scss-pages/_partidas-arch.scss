@@ -38,6 +38,7 @@ body{
                 text-align: left;
                 font-weight: 700;
                 padding: 5px;
+                margin: 0;
             }
         }
 
@@ -54,9 +55,13 @@ body{
                 p{
                     background-color: #3C6810;
                     color: $secondary-color;
-                    border: #000000 2px solid;
+                    border: $secondary-color 1px solid;
+                    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.3);
+
+                    border-radius: 3px;
                     text-align: center;
                     font-size: 30px;
+                    font-weight: lighter;
                     width: 95%;
                     padding: 5px 0;
                     margin: 10px 0;
@@ -89,5 +94,48 @@ body{
                 }
             }
         }
+    }
+}
+
+
+//mixins
+@mixin md($medida : 480px){
+    @media screen and (max-width: $medida){
+        @content;
+    }
+}
+
+
+//responsive
+.table-tbody{
+    @media screen and (max-width:890px) {
+        height: 1500px;
+    }
+}
+.part__boxs{
+    @include md(910px){ height: 90px;}
+    select{
+        @include md(910px){ width: 150px;}
+        @include md(830px){ width: 100px;}
+        @include md(730px){ width: 80px;}
+        @include md(670px){ width: 70px;}
+    }
+
+    .num{
+        @include md(910px){ width: 90px;}
+        @include md(830px){ width: 80px;}
+        @include md(670px){ width: 50px;}
+
+    }
+
+    #box__fecha{
+        @include md(710px){ width: 73px;}
+    }
+
+    .btn-check{
+        @include md(670px){ width: 20px;}
+    }
+    img{
+        @include md(590px){ height: 25px;}
     }
 }

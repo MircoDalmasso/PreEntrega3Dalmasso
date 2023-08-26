@@ -36,8 +36,17 @@ $secondary-color:#ffffff;
         height: 35px;
     }
 
+    .num{
+        width: 100px;
+        font-size: 18px;
+    }
+
     select :focus {
         border-color: transparent;
+    }
+
+    img{
+        height: 40px;
     }
 }
 
@@ -54,6 +63,4 @@ $secondary-color:#ffffff;
     }
 }
 
-img{
-    height: 40px;
-}
+
